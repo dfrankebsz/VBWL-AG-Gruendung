@@ -1,0 +1,27 @@
+[build]
+  publish = "site"
+  command = "echo 'Static course – no build step'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/auth"
+  to = "/.netlify/functions/auth"
+  status = 200
+
+[[redirects]]
+  from = "/api/progress"
+  to = "/.netlify/functions/progress"
+  status = 200
+
+[[redirects]]
+  from = "/api/teacher"
+  to = "/.netlify/functions/teacher"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
