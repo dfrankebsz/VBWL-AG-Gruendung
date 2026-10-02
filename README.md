@@ -79,3 +79,7 @@ Für lokale Lehrerregistrierung `TEACHER_CODE` als lokale Environment Variable s
 - Netlify Functions als API
 - Netlify Blobs als persistente Datenbank
 - API-Routen via `netlify.toml`: `/api/auth`, `/api/progress`, `/api/teacher`
+
+## Umfang der Übungsphase
+
+Die erweiterte Fassung enthält **36 reguläre Kernaufgaben** sowie zusätzliche Bonusaufgaben. Ein eigener Abschnitt **„Gründungsbilanz-Werkstatt“** enthält zahlreiche vollständige Bilanzfälle vom einfachen Bar-/Sachgründungsfall bis zu komplexen Formwechseln mit Agio, bereits eingeforderten bzw. noch nicht eingeforderten Einlagen, ARA und Gründungskosten als Aufwand.
