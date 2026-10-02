@@ -4,19 +4,35 @@ Ein statischer, mobilfähiger Lernkurs mit Netlify Functions + Netlify Blobs. Ke
 
 ## Enthalten
 
-- vollständiger Lernkurs zur AG-Gründung und zum Formwechsel KG → AG
-- Schwerpunkt: vollständige Gründungsbilanzen aus Sachverhalten erstellen
-- 24 Kernaufgaben + Bonus-Challenges
-- AFB-Kennzeichnung je Aufgabe
+- vollständiger Lernkurs zur AG-Gründung und zum Formwechsel **KG/GmbH → AG**
+- Schwerpunkt: **vollständige Gründungsbilanzen aus Sachverhalten, Gesellschaftsverträgen und gegebenen Schlussbilanzen** erstellen
+- **48 reguläre Kernaufgaben** + Bonus-Challenges
+- davon sehr viele vollständige Bilanz-Builder
+- AFB-Verteilung der regulären Aufgaben: **12 × AFB 1, 24 × AFB 2, 12 × AFB 3**
+- jedes Kapitel enthält Aufgaben in allen drei Anforderungsbereichen
 - automatische Prüfung für eindeutige Aufgaben
 - Freitext mit Selbstkontrolle und Musterlösung
-- vollständige Bilanz-Builder
 - XP, Fortschrittsring, Achievements, Themes, Avatare, Outfits
 - Gastmodus mit lokaler Speicherung
 - Schülerkonten mit Nickname + Passwort + Klasse
 - Lehrerzugang mit Klasse + Lehrercode
 - Lehrer-Dashboard: Fortschritt ansehen, Fortschritt löschen, Nutzer entfernen, Passwörter neu setzen
 - geräteübergreifende Synchronisation bei Anmeldung
+
+## Didaktische Reihenfolge
+
+Die Reihenfolge wurde bewusst so aufgebaut, dass vollständige Bilanzen **nicht erst am Ende** auftauchen:
+
+1. **Die AG verstehen** – Rechtsform, Aktien, Eigenkapitalbegriffe
+2. **Von der Idee zur AG** – Errichtung, Organe, Handelsregister, Formwechsel
+3. **Aktien, Agio und Einlagen rechnen** – Rechenbasis für jede Gründungsbilanz
+4. **Gründungsbilanz verstehen und vorbereiten** – Bilanzposten, ARA, Kontrollrechnung, erster vollständiger Fall
+5. **Gründungsbilanz-Werkstatt: Neugründung** – wiederholtes Erstellen vollständiger Bilanzen ohne Ausgangsgesellschaft
+6. **Formwechsel verstehen & Ausgangsbilanz lesen** – Schlussbilanz einer KG/GmbH auswerten und in die AG überführen
+7. **Formwechsel-Werkstatt: KG/GmbH → AG** – zahlreiche vollständige Bilanzfälle aus gegebenen Schlussbilanzen plus Kapitalerhöhungen
+8. **Bilanz-Meisterschaft** – komplexe Prüfungsfälle mit Agio, ARA, Gründungskosten, eingeforderten und nicht eingeforderten Einlagen
+
+Die Formwechsel-Werkstatt enthält ausdrücklich Fälle, in denen zunächst eine **vollständige Schlussbilanz einer KG oder GmbH** gegeben ist. Daraus werden Eigenkapital, Grundkapital, Kapitalrücklage, Einzahlungen und die vollständige AG-Bilanz abgeleitet.
 
 ## GitHub → Netlify
 
@@ -31,7 +47,7 @@ Ein statischer, mobilfähiger Lernkurs mit Netlify Functions + Netlify Blobs. Ke
    - Scope: Functions bzw. alle relevanten Scopes
 5. Deploy starten.
 
-> Wichtig: Laut aktueller Netlify-Dokumentation sind Umgebungsvariablen aus `netlify.toml` nicht automatisch zur Laufzeit in Functions verfügbar. Deshalb `TEACHER_CODE` im Netlify-UI anlegen.
+> Wichtig: `TEACHER_CODE` im Netlify-UI als Environment Variable anlegen, damit die Functions zur Laufzeit darauf zugreifen können.
 
 ## Konten
 
@@ -79,7 +95,3 @@ Für lokale Lehrerregistrierung `TEACHER_CODE` als lokale Environment Variable s
 - Netlify Functions als API
 - Netlify Blobs als persistente Datenbank
 - API-Routen via `netlify.toml`: `/api/auth`, `/api/progress`, `/api/teacher`
-
-## Umfang der Übungsphase
-
-Die erweiterte Fassung enthält **36 reguläre Kernaufgaben** sowie zusätzliche Bonusaufgaben. Ein eigener Abschnitt **„Gründungsbilanz-Werkstatt“** enthält zahlreiche vollständige Bilanzfälle vom einfachen Bar-/Sachgründungsfall bis zu komplexen Formwechseln mit Agio, bereits eingeforderten bzw. noch nicht eingeforderten Einlagen, ARA und Gründungskosten als Aufwand.
